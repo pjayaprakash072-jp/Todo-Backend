@@ -226,7 +226,7 @@ async function checkReminders() {
   }
 }
 
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
   console.log(`Todo backend running on http://localhost:${port}`);
 
   // Check due tasks every 15 seconds while this process is running.
